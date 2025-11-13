@@ -14,6 +14,6 @@ public void circle(int x, int y){
 }
 
 public void cross(){
-  line();
-  line()
+  line(120, 180, 180, 120);
+  line(180, 120, 120, 180);
 }
