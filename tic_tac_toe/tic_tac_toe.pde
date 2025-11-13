@@ -1,7 +1,8 @@
 void setup() {
   size(500, 500);
+  background(240, 232, 218);
+  strokeWeight(9);
   board();
-  cross();
 }
 
 void draw() {

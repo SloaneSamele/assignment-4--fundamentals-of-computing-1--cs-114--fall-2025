@@ -1,5 +1,5 @@
 public void board(){
-  strokeWeight(9);
+  stroke(#1F0603);
   //Vetical 
   line(300, 100, 300, 400);
   line(200, 100, 200, 400);
@@ -10,10 +10,13 @@ public void board(){
 }
 
 public void circle(int x, int y){
+ fill(#D47B5B);
+ noStroke();
  circle(x, y, 70); 
 }
 
-public void cross(){
-  line(120, 180, 180, 120);
-  line(180, 120, 120, 180);
+public void cross(int x1, int y1, int x2 , int y2){
+  stroke(#3F4144);
+  line(x1, y1, x2, y2);
+  line(x1, y2, x2, y1);
 }

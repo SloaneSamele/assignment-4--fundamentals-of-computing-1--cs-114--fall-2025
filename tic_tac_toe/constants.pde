@@ -1,7 +1,8 @@
-final int TOP = 150;
-final int MIDDLE= 250;
-final int BOTTOM = 350;
+final int CIRCLEX = 150;
+final int CIRCLEY = 150;
 
-final int LEFT = 150;
-final int CENTER = 250;
-final int RIGHT= 350;
+final int CROSSY1 = 180;
+final int CROSSY2 = 120;
+
+final int CROSSX1 = 120;
+final int CROSSX2 = 180;
