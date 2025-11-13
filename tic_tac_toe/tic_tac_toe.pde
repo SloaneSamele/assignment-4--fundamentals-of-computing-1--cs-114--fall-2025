@@ -1,6 +1,7 @@
 void setup() {
   size(500, 500);
   board();
+  cross();
 }
 
 void draw() {
