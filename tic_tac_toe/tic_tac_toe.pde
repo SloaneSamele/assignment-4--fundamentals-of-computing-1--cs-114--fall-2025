@@ -6,7 +6,14 @@ void setup() {
 }
 
 void draw() {
+  if(computerTurn){
+    computerMove();
+  }
+  else{
+    playerMove();
+  }
 }
+
 //## ❖ Rules ❖
 
 //1. The size of the canvas *must* be 500×500.

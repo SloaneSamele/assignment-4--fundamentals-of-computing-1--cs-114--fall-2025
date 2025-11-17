@@ -9,5 +9,9 @@ final int CROSSX1 = 120;
 final int CROSSX2 = 180;
 
 //Game logics
-int[] positions = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 boolean computerTurn = true;
+
+IntList positions = new IntList();
+for(int count = 0; count < 9; ++count){
+  positions.append(count);
+}
