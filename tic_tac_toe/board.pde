@@ -1,34 +1,90 @@
 public void computerMove(){
-<<<<<<< HEAD
-  random;
-}
-
-public void playerMove(){
-  
-=======
   boolean validMove = false;
   int move;
-  
   do{
     move = int(random(9));
-    validateMove(move);
+    validMove = validateMove(move);
   }
   while(!validMove);
   
-  computerCross(move);
   computerTurn = false;
+  computerCross(move);
 }
 
-public void playerMove(){
+public void playerMove(int move){
+  validateMove(move);
   computerTurn = true;
->>>>>>> parent of 6a3e831 (Added game check)
+  playerCircle(move);
 }
 
 private boolean validateMove(int move){
   boolean validMove = false;
+  
+  for(int i = 0; i < positions.size(); ++i){
+    if(move == positions.get(i)){
+      positions.remove(i);
+      validMove = true;   
+      
+      break;
+    }
+  }
+  
+  return validMove;
+}
 
-<<<<<<< HEAD
-=======
+private void updateBoard(int move){
+  int updateValue = 1;
+  
+  if(!computerTurn){
+    updateValue = 2;
+  }
+  
+  switch(move){
+    case 0:
+      boardPlacement[0][0] = updateValue;
+      
+      break;
+      
+    case 1:
+      boardPlacement[0][1] = updateValue;
+      
+      break;
+      
+    case 2:
+      boardPlacement[0][2] = updateValue;
+      
+      break;
+      
+    case 3:
+      boardPlacement[1][0] = updateValue;
+      
+      break;
+    
+    case 4:
+      boardPlacement[1][1] = updateValue;
+      
+      break;     
+    case 5:
+      boardPlacement[1][2] = updateValue;
+      
+      break;
+    case 6:
+      boardPlacement[2][0] = updateValue;
+      
+      break;
+    case 7:
+      boardPlacement[1][0] = updateValue;
+      
+      break;
+    case 8:
+      boardPlacement[1][0] = updateValue;
+      
+      break;
+    default:
+      print("Outside of the scope");
+  }
+}
+      
 private void computerCross(int position){
   switch(position){
     case 0:
@@ -62,7 +118,7 @@ private void computerCross(int position){
       break;
       
     case 6:
-      cross(CROSSX1, CROSSY1 + 200, CROSSX2 + 200, CROSSY2);
+      cross(CROSSX1, CROSSY1 + 200, CROSSX2, CROSSY2 + 200);
       
       break;
       
@@ -131,8 +187,4 @@ private void playerCircle(int position){
     default: 
       print("Not a move");
   }
-}
-public void doSomething(){
-  cross(CROSSX1, CROSSY1, CROSSX2, CROSSY2);
->>>>>>> parent of 6a3e831 (Added game check)
 }
