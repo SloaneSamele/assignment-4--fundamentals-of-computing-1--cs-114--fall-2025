@@ -9,5 +9,10 @@ final int CROSSY1 = 180;
 final int CROSSY2 = 120;
 
 //Game logics
+int turns = 1;
+boolean gameWin = false;
 boolean computerTurn = true;
 IntList positions = new IntList();
+final int[][] board = new int[3][3];
+
+//9.5

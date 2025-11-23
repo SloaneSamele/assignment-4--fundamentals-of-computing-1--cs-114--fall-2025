@@ -9,18 +9,12 @@ void setup() {
   for(int count = 0; count < 9; ++count){
     positions.append(count);
   }
+  computerMove();
 }
 
 void draw() {
 }
-void keyPressed(){
-  if(computerTurn){
-    computerMove();
-  }
-  else{
-    playerMove();
-  }
-}
+
 
 //## ❖ Rules ❖
 
