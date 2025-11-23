@@ -3,6 +3,13 @@ void setup() {
   background(240, 232, 218);
   strokeWeight(9);
   board();
+<<<<<<< HEAD
+=======
+  
+  for(int count = 0; count < 9; ++count){
+    positions.append(count);
+  }
+>>>>>>> parent of 6a3e831 (Added game check)
 }
 
 void draw() {
@@ -13,6 +20,17 @@ void draw() {
     playerMove();
   }
 }
+<<<<<<< HEAD
+=======
+void keyPressed(){
+  if(computerTurn){
+    computerMove();
+  }
+  else{
+    playerMove();
+  }
+}
+>>>>>>> parent of 6a3e831 (Added game check)
 
 //## ❖ Rules ❖
 
