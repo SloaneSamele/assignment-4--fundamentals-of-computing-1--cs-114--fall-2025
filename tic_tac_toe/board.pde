@@ -13,9 +13,13 @@ public void computerMove(){
 }
 
 public void playerMove(int move){
-  validateMove(move);
-  updateBoard(move);
+  if(!validateMove(move)){
+    println("Invalid move");
+    
+    return;
+  }
   playerCircle(move);
+  updateBoard(move);
   computerTurn = true;
 }
 
@@ -88,7 +92,7 @@ private void updateBoard(int move){
       break;
 
     default:
-      print("Outside of the scope");
+      println("Outside of the scope");
   }
 }
 
@@ -227,6 +231,6 @@ private void playerCircle(int position){
       break;
 
     default:
-      print("Not a move");
+      println("Not a move");
   }
 }

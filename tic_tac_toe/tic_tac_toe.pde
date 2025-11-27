@@ -11,5 +11,23 @@ void setup() {
   }
   computerMove();
 }
+
 void draw() {
+  if(computerTurn){
+    computerMove();
+    println("Computer");
+  }
+}
+
+void keyPressed(){
+  if(key  >= 0 && key < 9){
+    println("PlayerMove");
+    println(key);
+    playerMove(int(key));
+    
+    return;
+  }
+  else{
+    println("Invalid key");
+  }
 }
