@@ -13,14 +13,9 @@ public void computerMove(){
 }
 
 public void playerMove(int move){
-  if(!validateMove(move)){
-    println("Invalid move");
-    
-    return;
-  }
-  playerCircle(move);
-  updateBoard(move);
-  computerTurn = true;
+    playerCircle(move);
+    updateBoard(move);
+    computerTurn = true;s
 }
 
 private boolean validateMove(int move){
