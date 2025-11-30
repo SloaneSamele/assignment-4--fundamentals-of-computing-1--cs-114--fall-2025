@@ -1,4 +1,3 @@
-// X and Y positions for items
 final int CIRCLEX = 150;
 final int CIRCLEY = 150;
 

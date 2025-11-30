@@ -22,9 +22,6 @@ public void playerMove(int move){
     computerTurn = true;
     ++turns;
   }
-  else{
-    return;
-  }
 }
 
 private boolean validateMove(int move){
