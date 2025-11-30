@@ -14,8 +14,24 @@ void setup(){
 
 void draw(){
   checkWin();
+  
   if(gameWin){
-    println("Game over");
+    if(!computerTurn){
+      println("Computer Win");
+      
+      return;
+      
+    }
+    else{
+      println("Player Win");
+      
+      return;
+    }
+  }
+  
+  if(turns == 9){
+    println("Draw");
+    
     return;
   }
   if(computerTurn){
