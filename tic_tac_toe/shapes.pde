@@ -10,7 +10,7 @@ public void board(){
 }
 
 public void circle(int x, int y){
- fill(#D47B5B);
+ fill(#AD0013);
  noStroke();
  circle(x, y, 70); 
 }

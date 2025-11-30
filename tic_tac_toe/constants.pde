@@ -9,6 +9,7 @@ final int CROSSX1 = 120;
 final int CROSSX2 = 180;
 
 //Game logics
+int turns = 1;
 boolean computerTurn = true,
         gameWin = false;
 IntList positions = new IntList();

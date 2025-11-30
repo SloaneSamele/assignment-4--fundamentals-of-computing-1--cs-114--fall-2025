@@ -10,12 +10,21 @@ public void computerMove(){
   updateBoard(move);
   computerCross(move);
   computerTurn = false;
+  ++turns;
 }
 
 public void playerMove(int move){
-    playerCircle(move);
-    updateBoard(move);
-    computerTurn = true;s
+  int convertedMove = convertASCIItoInt(move);
+  
+  if(validateMove(convertedMove)){
+    playerCircle(convertedMove);
+    updateBoard(convertedMove);
+    computerTurn = true;
+    ++turns;
+  }
+  else{
+    return;
+  }
 }
 
 private boolean validateMove(int move){
@@ -228,4 +237,60 @@ private void playerCircle(int position){
     default:
       println("Not a move");
   }
+}
+public int convertASCIItoInt(int ascii){
+  int converted = ascii;
+  switch(ascii){
+    case 48:
+      converted = 0;
+      
+      break;
+    
+    case 49:
+      converted = 1;
+      
+      break;
+    
+    case 50:
+      converted = 2;
+      
+      break;
+    
+    case 51:
+      converted = 3;
+      
+      break;
+    
+    case 52:
+      converted = 4;
+      
+      break;
+    
+    case 53:
+      converted = 5;
+      
+      break;
+    
+    case 54:
+      converted = 6;
+      
+      break;
+    
+    case 55:
+      converted = 7;
+      
+      break;
+    
+    case 56:
+      converted = 8;
+      
+      break;
+    
+    default:
+      println("Outside the Ascii scope");
+      
+      return 0;
+  }
+  
+  return converted;
 }

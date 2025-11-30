@@ -13,19 +13,18 @@ void setup(){
 }
 
 void draw(){
+  checkWin();
   if(gameWin){
-    print("Game over");
+    println("Game over");
     return;
   }
   if(computerTurn){
     computerMove();
-    println("Computer");
   }
 }
 
 void keyPressed(){
   if(key  >= '0' && key < '9'){
-    print(key);
     playerMove(key);
     return;
   }
