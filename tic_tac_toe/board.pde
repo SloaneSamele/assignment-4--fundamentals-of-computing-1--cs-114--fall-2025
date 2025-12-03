@@ -14,7 +14,7 @@ public void computerMove(){
 }
 
 public void playerMove(int move){
-  int convertedMove = ASCIItoInt(move);
+  int convertedMove = asciiToInt(move);
   
   if(validateMove(convertedMove) && !computerTurn){
     playerCircle(convertedMove);
@@ -235,7 +235,7 @@ private void playerCircle(int position){
       println("Not a move");
   }
 }
-private int ASCIItoInt(int ascii){
+private int asciiToInt(int ascii){
   int converted = ascii;
   switch(ascii){
     case 48:
