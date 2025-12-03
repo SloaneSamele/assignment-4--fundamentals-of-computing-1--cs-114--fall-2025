@@ -1,4 +1,4 @@
- int[] board = new int [9]; //<>// //<>// //<>//
+ int[] board = new int [9];
 
 void setup() {
   size(500, 500);
@@ -8,6 +8,8 @@ void setup() {
 }
   println("Game has started");
   println("Board all empty");
+  computerFirstMove();
+
 }
 
 void draw() {
