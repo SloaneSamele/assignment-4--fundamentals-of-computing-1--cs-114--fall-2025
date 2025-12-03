@@ -37,12 +37,13 @@ void draw(){
     
     return;
   }
+  
   if(computerTurn){
     computerMove();
   }
 }
 
-void keyPressed(){
+void keyTyped(){
   if(turns == 9){
     println("Game has ended");
   }
