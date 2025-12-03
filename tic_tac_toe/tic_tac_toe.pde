@@ -1,6 +1,6 @@
 void setup(){
   size(500, 500);
-  background(218, 218, 235);
+  background(224, 222, 205);
   strokeWeight(9);
   pixelDensity(1);
   

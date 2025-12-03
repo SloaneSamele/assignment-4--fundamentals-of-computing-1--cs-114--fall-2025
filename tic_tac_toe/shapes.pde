@@ -1,5 +1,5 @@
 public void board(){
-  stroke(#01162B);
+  stroke(#000000);
   
   //Vetical 
   line(300, 100, 300, 400);
@@ -11,7 +11,7 @@ public void board(){
 }
 
 public void circle(int x, int y){
- fill(#6A90B4);
+ fill(#92140C);
  noStroke();
  circle(x, y, 70); 
 }
